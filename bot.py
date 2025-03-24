@@ -20,7 +20,12 @@ def send_telegram(message):
 symbols = {
     "XRP": "XRPUSDT",
     "SOL": "SOLUSDT",
-    "ADA": "ADAUSDT"
+    "ADA": "ADAUSDT",
+    "ETH": "ETHUSDT",
+    "FARTCOIN": "FARTCOINUSDT",
+    "PI": "PIUSDT",
+    "ALGO": "ALGOUSDT",
+    "IOTA": "IOTAUSDT"
 }
 
 # === Fetch Binance Candle Data ===
@@ -106,7 +111,7 @@ while True:
             df = fetch_data(symbol)
             signal, entry, target, stop_loss, confidence = analyze(df)
 
-            if signal in ["LONG", "SHORT"] and confidence >= 70:
+            if signal in ["LONG", "SHORT"] and confidence >= 65:
                 msg = (
                     f"📈 {name} Signal: {signal}\n"
                     f"Entry: ${entry}\n"
