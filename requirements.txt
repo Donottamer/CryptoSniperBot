@@ -1,3 +1,4 @@
-requests
+streamlit
+gspread
+oauth2client
 pandas
-ta
