@@ -10,8 +10,8 @@ import numpy as np
 from scipy.signal import argrelextrema
 
 # === Telegram Setup ===
-TELEGRAM_TOKEN = "YOUR_BOT_TOKEN"
-TELEGRAM_CHAT_ID = "YOUR_CHAT_ID"
+TELEGRAM_TOKEN = "7908508903:AAF8jHtvcwy3CFNbRLr3dFqrP8tIfFwdons"
+TELEGRAM_CHAT_ID = "7880744999"
 
 def send_telegram(message):
     url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
