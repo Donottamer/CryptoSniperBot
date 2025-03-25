@@ -17,8 +17,7 @@ def load_data():
         "type": st.secrets["type"],
         "project_id": st.secrets["project_id"],
         "private_key_id": st.secrets["private_key_id"],
-        "private_key": st.secrets["private_key"].replace("\n", "
-"),
+        "private_key": st.secrets["private_key"].replace("\n", "                    "),
         "client_email": st.secrets["client_email"],
         "client_id": st.secrets["client_id"],
         "auth_uri": st.secrets["auth_uri"],
